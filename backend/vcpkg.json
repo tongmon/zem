@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "wms-server",
+  "version": "1.0.0",
+  "dependencies": [
+    {
+      "name": "openssl"
+    },
+    {
+      "name": "boost-asio",
+      "features": [
+        "ssl"
+      ]
+    },
+    {
+      "name": "boost-dll"
+    },
+    {
+      "name": "boost-filesystem"
+    },
+    {
+      "name": "boost-json"
+    },
+    {
+      "name": "boost-algorithm"
+    },
+    {
+      "name": "gtest"
+    },
+    {
+      "name": "soci",
+      "features": [
+        "postgresql"
+      ]
+    }
+  ],
+  "overrides": [
+    {
+      "name": "openssl",
+      "version": "3.5.1"
+    },
+    {
+      "name": "boost-asio",
+      "version": "1.88.0"
+    },
+    {
+      "name": "gtest",
+      "version": "1.17.0"
+    },
+    {
+      "name": "soci",
+      "version": "4.0.3"
+    }
+  ],
+  "builtin-baseline": "b6649256091aa433d6d7a912eb5f2c7725a0c040"
+}
